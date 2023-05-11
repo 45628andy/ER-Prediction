@@ -4,10 +4,12 @@ Multi-Modal Emergency Department Clinical Outcome Prediction Project
 Python code for implementing the multi-modal prediction model based on MIMIC-IV datasets. Note: some files are from [https://github.com/nliulab/mimic4ed-benchmark/tree/main], the benchmark that this project is based on. 
 
 ## Table of contents
-* [Dataset](#Dataset)
-* [Additional Preprocessing](#Additional-Preprocessing)
-* [Reproducing Result](#Reproducing-Result)
-* [Citation](#citation)
+- [Multi-Modal Emergency Department Clinical Outcome Prediction Project](#multi-modal-emergency-department-clinical-outcome-prediction-project)
+  - [Table of contents](#table-of-contents)
+  - [Dataset](#dataset)
+  - [Additional Preprocessing](#additional-preprocessing)
+  - [Reproducing Result](#reproducing-result)
+  - [Citation](#citation)
 
 ## Dataset
 
@@ -22,9 +24,16 @@ For X-Ray notes, download `mimic-cxr-reports.zip`, unzip it, and paste it to `pr
 
 For med embedding, download MIMIC-IV ED dataset and paste it to `mimic-iv-ed-2.2` folder. Run `data_add_medrecon.py` in interactive shell to add the embedding.
 
+For X-Ray notes embeddings, first `cd processed_train_test` and run `merge_text_emb.py` to obtain `train_cxr_note_embs` and`test_cxr_note_embs.npy`.
+
+For X-Ray img embeddings, 
+
+
+Then `cd processed_train_test` and run `merge_img_emb.py` to obtain `train_cxr_img_embs.npy` and`testcxr_img_embs.npy.npy`.
+
 ## Reproducing Result
 
-To reproduce the result, follow `Notebook_models_wtih_cxr.ipynb`.
+Run `Notebook_models_wtih_cxr.ipynb` to train and test the model.
 
 
 ## Citation
