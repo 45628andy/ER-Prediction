@@ -27,7 +27,8 @@ For med embedding, download MIMIC-IV ED dataset and paste it to `mimic-iv-ed-2.2
 For X-Ray notes embeddings, first `cd processed_train_test` and run `merge_text_emb.py` to obtain `train_cxr_note_embs` and`test_cxr_note_embs.npy`.
 
 For X-Ray img embeddings, 
-
+first `cd processed_train_test` and run `process_embeddings.py` to obtain `cxr_emb.pkl`
+first `cd processed_train_test` and run `process_jpg_embeddings.py` to obtain `cxr_jpg_emb.pkl`
 
 Then `cd processed_train_test` and run `merge_img_emb.py` to obtain `train_cxr_img_embs.npy` and`testcxr_img_embs.npy.npy`.
 
